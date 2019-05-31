@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App Torcedores</string>
+    <string name="title_activity_resultados">Resultados</string>
+    <string name="informa_es">Informações</string>
+    <string name="v_deos">Vídeos</string>
+    <string name="not_cias">Notícias</string>
+    <string name="agenda">Agenda</string>
+    <string name="resultados">Resultados</string>
+    <string name="voltar">Voltar</string>
+</resources>
