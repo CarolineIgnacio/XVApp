@@ -7,16 +7,161 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".Resultados">
 
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="94dp"
+        android:layout_height="104dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="196dp"
+        android:layout_height="157dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_12"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="38dp" />
+
     <Button
         android:id="@+id/button9"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="17dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="29dp"
-        android:text="@string/voltar"
         android:onClick="telaPrincipal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="@string/voltar"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="708dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultados"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ltimos_resultados"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paulista_a2_13_4"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="94dp"
+        android:layout_height="104dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="94dp"
+        android:layout_height="104dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/ic_timec"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xv_piracicaba_0_x_0_inter_de_limeira"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="telaPrincipal"
+        android:text="Ver mais resultados"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="204dp"
+        android:layout_height="21dp"
+        android:text="XV Piracicaba 1 x 1 Juventus"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XV Piracicaba 1 x 0 Juventus"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paulista A2 7/4"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paulista A2 4/4"
+        android:textColor="@color/colorAccent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="585dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
