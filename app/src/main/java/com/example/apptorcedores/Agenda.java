@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.apptorcedores.Maps.FirstMapsActivity;
+import com.example.apptorcedores.Maps.SecondMapsActivity;
+
 public class Agenda extends AppCompatActivity {
 
     @Override
@@ -18,4 +21,16 @@ public class Agenda extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void localPrimeiroJogo(View view) {
+        Intent intent = new Intent(this, FirstMapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void localSegundoJogo(View view) {
+        Intent intent = new Intent(this, SecondMapsActivity.class);
+        startActivity(intent);
+    }
+
+
 }
