@@ -16,8 +16,8 @@ public class Videos extends YouTubeBaseActivity {
 
     YouTubePlayerView youTubePlayerView;
     YouTubePlayerView youTubePlayerView2;
-    YouTubePlayer.OnInitializedListener onInitializedListener;
-
+    YouTubePlayer.OnInitializedListener onInitializedListener1;
+    YouTubePlayer.OnInitializedListener onInitializedListener2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class Videos extends YouTubeBaseActivity {
 
     public void playVideo1() {
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player);
-        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
+        onInitializedListener1 = new YouTubePlayer.OnInitializedListener() {
 
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -53,14 +53,14 @@ public class Videos extends YouTubeBaseActivity {
             @Override
             public void onClick(View v) {
 
-                youTubePlayerView.initialize(YTVideo.getApiKey(), onInitializedListener);
+                youTubePlayerView.initialize(YTVideo.getApiKey(), onInitializedListener1);
             }
         });
     }
 
     public void playVideo2() {
         youTubePlayerView2 = (YouTubePlayerView) findViewById(R.id.youtube_player2);
-        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
+        onInitializedListener2 = new YouTubePlayer.OnInitializedListener() {
 
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -77,7 +77,7 @@ public class Videos extends YouTubeBaseActivity {
             @Override
             public void onClick(View v) {
 
-                youTubePlayerView2.initialize(YTVideo.getApiKey(), onInitializedListener);
+                youTubePlayerView2.initialize(YTVideo.getApiKey(), onInitializedListener2);
             }
         });
     }
