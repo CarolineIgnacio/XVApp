@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App Torcedores</string>
+    <string name="app_name">XV de Piracicaba</string>
     <string name="title_activity_resultados">Resultados</string>
     <string name="informa_es">Informações</string>
     <string name="v_deos">Vídeos</string>
@@ -16,4 +16,7 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_second_maps">Map</string>
     <string name="title_activity_third_maps">Map</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
 </resources>

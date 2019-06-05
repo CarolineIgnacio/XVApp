@@ -3,48 +3,89 @@ package com.example.apptorcedores;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
-public class Videos extends AppCompatActivity {
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+
+
+public class Videos extends YouTubeBaseActivity {
+
+    YouTubePlayerView youTubePlayerView;
+    YouTubePlayerView youTubePlayerView2;
+    YouTubePlayer.OnInitializedListener onInitializedListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_videos);
-        playVideos();
+        playVideo1();
+        playVideo2();
     }
+
 
     public void telaPrincipal(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
     }
 
-    public void playVideos() {
-        ImageView img1 = (ImageView) findViewById(R.id.imageView15);
-        ImageView img2 = (ImageView) findViewById(R.id.imageView16);
+    public void playVideo1() {
+        youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player);
+        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
 
-        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+                youTubePlayer.loadVideo("xBoao8XTOSg");
+                youTubePlayer.play();
+            }
+
+            @Override
+            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+            }
+        };
+
+        youTubePlayerView.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.youtube.com/watch?v=mKlJbECyU8w"));
-                startActivity(intent);
+
+                youTubePlayerView.initialize(YTVideo.getApiKey(), onInitializedListener);
             }
         });
+    }
 
-        img2.setOnClickListener(new View.OnClickListener() {
+    public void playVideo2() {
+        youTubePlayerView2 = (YouTubePlayerView) findViewById(R.id.youtube_player2);
+        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
+
+            @Override
+            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+                youTubePlayer.loadVideo("xBoao8XTOSg");
+                youTubePlayer.play();
+            }
+
+            @Override
+            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+            }
+        };
+
+        youTubePlayerView2.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.youtube.com/watch?v=nye4Zav8L4M"));
-                startActivity(intent);
+
+                youTubePlayerView2.initialize(YTVideo.getApiKey(), onInitializedListener);
             }
         });
     }
 
 }
+
+
+
+
+
