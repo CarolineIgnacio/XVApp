@@ -1,4 +1,4 @@
-package com.example.apptorcedores;
+package com.example.apptorcedores.Telas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.apptorcedores.R;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.apptorcedores;
+package com.example.apptorcedores.Telas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.apptorcedores.Maps.FirstMapsActivity;
 import com.example.apptorcedores.Maps.SecondMapsActivity;
+import com.example.apptorcedores.R;
 
 public class Agenda extends AppCompatActivity {
 

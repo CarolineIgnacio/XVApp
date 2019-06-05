@@ -1,10 +1,12 @@
-package com.example.apptorcedores;
+package com.example.apptorcedores.Telas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.apptorcedores.R;
 
 public class MainActivity extends AppCompatActivity {
 

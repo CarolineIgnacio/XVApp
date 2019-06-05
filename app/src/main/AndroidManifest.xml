@@ -35,12 +35,12 @@
         <activity
             android:name=".Maps.FirstMapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Agenda" />
-        <activity android:name=".Noticias" />
-        <activity android:name=".Videos" />
-        <activity android:name=".Info" />
-        <activity android:name=".Resultados" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Telas.Agenda" />
+        <activity android:name=".Telas.Noticias" />
+        <activity android:name=".Telas.Videos" />
+        <activity android:name=".Telas.Info" />
+        <activity android:name=".Telas.Resultados" />
+        <activity android:name=".Telas.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
